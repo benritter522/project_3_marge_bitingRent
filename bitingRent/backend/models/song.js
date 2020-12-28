@@ -9,6 +9,6 @@ const songSchema = Schema({
     // newAttribute:     { type: ******, required: false }
 
 
-})
+});
 
-module.exports = model('Song', songSchema)
+module.exports = model('Song', songSchema);
