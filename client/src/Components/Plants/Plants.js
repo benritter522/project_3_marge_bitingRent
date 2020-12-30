@@ -34,7 +34,11 @@ const Plants = () => {
 
     useEffect(() => {
         fetchPlants();
-    }, [plants]);
+    }, []);
+    
+    // useEffect(() => {
+    //     fetchPlants();
+    // }, [plants]);
 
     return(
         <div>

@@ -18,15 +18,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>BitingRent</h1>
+        <img src="https://i.imgur.com/4CbaLZT.png" />
+
+
+
         <nav>
-          <Link to="/">
-            <h1>BitingRent</h1>
-          </Link>
-          <Link to="/about">About</Link>
-          <Link to="/music">Music</Link>
+          <Link className="App-link" to="/">Home</Link>
+          <Link className="App-link" to="/about">About</Link>
+          <Link className="App-link" to="/music">Music</Link>
           {/* <Link to="/songs">Songs</Link> */}
-          <Link to="/plants">Plants</Link>
+          <Link className="App-link" to="/plants">Plants</Link>
         </nav>
+      </header>
         <Switch>
           <Route exact path ="/" component={Home} />
           <Route path="/about" component={About} />
@@ -34,7 +38,6 @@ function App() {
           {/* <Route path="/songs" component={Songs} /> */}
           <Route path="/plants" component={Plants} />
         </Switch>
-      </header>
     </div>
   );
 }
