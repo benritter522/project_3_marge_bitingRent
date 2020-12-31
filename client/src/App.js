@@ -6,7 +6,7 @@ import { Route, Link, Switch } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Music from './Components/Music/Music';
-// import Songs from './Components/Songs/Songs';
+import Songs from './Components/Songs/Songs';
 import Plants from './Components/Plants/Plants';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>BitingRent</h1>
+        <h1 className="bitingRentHeader">BitingRent</h1>
         <img src="https://i.imgur.com/4CbaLZT.png" />
 
 
@@ -35,7 +35,7 @@ function App() {
           <Route exact path ="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/music" component={Music} />
-          {/* <Route path="/songs" component={Songs} /> */}
+          <Route path="/songs" component={Songs} />
           <Route path="/plants" component={Plants} />
         </Switch>
     </div>

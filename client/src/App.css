@@ -34,16 +34,10 @@ nav {
   justify-content: space-around;
   padding: .5rem;
 }
-/* 
-ul {
-  display: flex;
-  text-align: center;
-}
 
-li {
-  display: flex;
-  text-align: center;
-} */
+.bitingRentHeader {
+  font-size: 5rem;
+}
 
 .App {
   margin: 0;
@@ -51,7 +45,7 @@ li {
   text-align: center;
   background-color: black;
   color: white;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 .App-link {
