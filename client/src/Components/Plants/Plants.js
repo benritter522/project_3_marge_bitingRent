@@ -43,12 +43,18 @@ const Plants = () => {
     return(
         <div>
             <h1>Plants</h1>
-            <ul className="plants">
+            <ul className="indexPlants">
                 {
                     plants.map(plant => {
                     return(
-                        <li key={plant._id}>
+                        <li className="indexSinglePlant" key={plant._id}>
+                        {/* link to show page */}
                         <p>{plant.name} | {plant.color}</p>
+                        <p className="indexPlantNickname">{plant.nickname} the </p>
+                        <p className="indexPlantName">{plant.name}</p>
+                        <img className="indexPlantImg" src={plant.img}/>
+
+
                         <button onClick={
                             (event) => {
                             deletePlant(plant._id);

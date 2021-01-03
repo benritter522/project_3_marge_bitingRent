@@ -38,7 +38,7 @@ const Songs = () => {
 
     return(
         <div>
-            <h1>Songs</h1>
+            <h1 className="songs-header">Songs</h1>
             <ul className="songs">
                 {
                     songs.map(song => {

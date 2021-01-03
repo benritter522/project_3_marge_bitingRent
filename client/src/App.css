@@ -39,6 +39,30 @@ nav {
   font-size: 5rem;
 }
 
+.songs-header {
+  text-align: left;
+  /* background-color: black; */
+  /* border: 1px solid white; */
+  margin: 0;
+  padding: 2rem 10rem;
+}
+
+.indexPlants {
+  background-color: black;
+  margin: 0;
+}
+
+.indexSinglePlant {
+  background-color: black;
+}
+.songs {
+  background-color: black;
+  text-align: left;
+  /* border: 1px solid white; */
+  margin: 0;
+  padding: 0 3rem;
+}
+
 .App {
   margin: 0;
   padding: 0;
