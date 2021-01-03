@@ -1,5 +1,7 @@
 // // import React from 'react';
 import { useState, useEffect } from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
+
 
 const Plants = () => {
     const [plants, setPlants] = useState([]);
@@ -7,7 +9,7 @@ const Plants = () => {
   // Read
     const fetchPlants = async () => {
         try {
-        const response = await fetch('http://localhost:3000/plants');
+        const response = await fetch('/plants');
         const data = await response.json();
         setPlants(data);
         } catch(error) {
@@ -43,28 +45,28 @@ const Plants = () => {
     return(
         <div>
             <h1>Plants</h1>
-            <ul className="indexPlants">
+            <div className="indexPlants">
                 {
                     plants.map(plant => {
                     return(
-                        <li className="indexSinglePlant" key={plant._id}>
-                        {/* link to show page */}
-                        <p>{plant.name} | {plant.color}</p>
-                        <p className="indexPlantNickname">{plant.nickname} the </p>
-                        <p className="indexPlantName">{plant.name}</p>
-                        <img className="indexPlantImg" src={plant.img}/>
-
-
-                        <button onClick={
-                            (event) => {
-                            deletePlant(plant._id);
-                            }
-                        }>Delete {plant.name}</button>
-                        </li>
+                        <div className="indexSinglePlant" key={plant._id}>
+                            <Link   className="App-link" 
+                                    plant={plant}
+                                    to={`/plants/${plant._id}`}>
+                                {/* <p className="indexPlantNickname">{plant.nickname}, the {plant.color} </p> */}
+                                <p className="indexPlantName">{plant.name}</p>
+                                <img className="indexPlantImg" src={plant.img}/>
+                            </Link>
+                            {/* <button onClick={
+                                (event) => {
+                                deletePlant(plant._id);
+                                }
+                            }>Delete {plant.name}</button> */}
+                        </div>
                     )
                     })
                 }
-            </ul>
+            </div>
         </div>
     )
 }

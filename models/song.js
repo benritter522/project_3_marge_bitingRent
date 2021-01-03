@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 const songSchema = Schema({
     title:      { type: String, required: true },
     firstLine:  { type: String, required: false },
-    lyrics:     { type: String, required: true }
+    lyrics:     { type: [String], required: true }
     // any new attributes must 
     // NOT BE REQUIRED
 

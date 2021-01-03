@@ -21,8 +21,6 @@ function App() {
         <h1 className="bitingRentHeader">BitingRent</h1>
         <img src="https://i.imgur.com/4CbaLZT.png" />
 
-
-
         <nav>
           <Link className="App-link" to="/">Home</Link>
           <Link className="App-link" to="/about">About</Link>
@@ -38,6 +36,7 @@ function App() {
           <Route path="/songs" component={Songs} />
           <Route path="/plants" component={Plants} />
         </Switch>
+        <br/>
     </div>
   );
 }

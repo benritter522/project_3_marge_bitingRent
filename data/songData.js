@@ -3,28 +3,28 @@ const songs = [
         title: "Ain't No Forest",
         firstLine: "I know this ain't no forest, but it's gonna have to do...",
         lyrics: 
-        `
-            I know this ain't no forest, 
-            But it's gonna have to do.
-            We brought out some fun and some tasty jams.
-            there's no worrying to do.
-
-            We'll take this time to reflect on the times 
-            When my friends and I would finish dimes in the trees, 
-            Smashing it up or playing a guitar in the park.
-            But all of these memories don't seem relevant
-            To any of these elephant-sized jobs I need to 
-            Manage to stop myself from fading into the dark.
-
-            We'll take this time to remember
-            How I loved the sweet surrender 
-            Of smoke to the wind.
-            But day to day, all I've got to say is, 'I've 
-            Got to find just one more way 
-            For me to win.'
-
-            I know this ain't no forest (x4)
-        `
+        [
+            "I know this ain't no forest, ",
+            "But it's gonna have to do.",
+            "We brought out some fun and some tasty jams.",
+            "there's no worrying to do.",
+            "",
+            "We'll take this time to reflect on the times ",
+            "When my friends and I would finish dimes in the trees, ",
+            "Smashing it up or playing a guitar in the park.",
+            "But all of these memories don't seem relevant",
+            "To any of these elephant-sized jobs I need to ",
+            "Manage to stop myself from fading into the dark.",
+            "",
+            "We'll take this time to remember",
+            "How I loved the sweet surrender ",
+            "Of smoke to the wind.",
+            "But day to day, all I've got to say is, 'I've ",
+            "Got to find just one more way ",
+            "For me to win.'",
+            "",
+            "I know this ain't no forest (x4)",
+        ]
     },
     {
         title: "Listen To The Wall",

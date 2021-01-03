@@ -39,6 +39,27 @@ nav {
   font-size: 5rem;
 }
 
+.indexPlants {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 0; */
+  /* padding: 5rem; */
+}
+.indexSinglePlant {
+  background-color: black;
+  border: 1px solid white;
+  width: 20rem;
+  /* height: 20rem; */
+  margin: .5rem;
+  padding: .5rem;
+  text-align: center;
+}
+.indexPlantImg {
+  width: 80%;
+}
+
 .songs-header {
   text-align: left;
   /* background-color: black; */
@@ -47,14 +68,7 @@ nav {
   padding: 2rem 10rem;
 }
 
-.indexPlants {
-  background-color: black;
-  margin: 0;
-}
 
-.indexSinglePlant {
-  background-color: black;
-}
 .songs {
   background-color: black;
   text-align: left;
