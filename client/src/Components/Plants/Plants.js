@@ -9,7 +9,7 @@ const Plants = () => {
   // Read
     const fetchPlants = async () => {
         try {
-        const response = await fetch('/plants');
+        const response = await fetch('http://localhost:3000/plants');
         const data = await response.json();
         setPlants(data);
         } catch(error) {
