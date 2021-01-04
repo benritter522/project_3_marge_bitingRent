@@ -20,7 +20,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="bitingRentHeader">BitingRent</h1>
+        <Link className="bitingRentHeaderLink" to="/">
+          <h1 className="bitingRentHeader">BitingRent</h1>
+        </Link>
         <img src="https://i.imgur.com/4CbaLZT.png" />
 
         <nav>

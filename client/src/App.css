@@ -37,6 +37,16 @@ nav {
 
 .bitingRentHeader {
   font-size: 5rem;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.bitingRentHeaderLink {
+  color: white;
+  text-decoration: none;
+
 }
 
 .indexPlants {

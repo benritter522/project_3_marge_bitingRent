@@ -5,7 +5,7 @@ const SinglePlant = (props) => {
     const [singlePlant, setSinglePlant] = useState({});
 
     // Read
-    const fetchSinglePlant = async (id) => {
+    const fetchSinglePlant = async () => {
         try {
             const response = await fetch(`http://localhost:3000/plants/${props.match.params.id}`);
             const data = await response.json();
