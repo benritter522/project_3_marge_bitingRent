@@ -10,8 +10,8 @@ const Plants = () => {
   // Read
     const fetchPlants = async () => {
         try {
-            // const response = await fetch('http://localhost:3000/plants');
-            const response = await fetch('/plants');
+            const response = await fetch('http://localhost:3000/plants');
+            // const response = await fetch('/plants');
             const data = await response.json();
             setPlants(data);
         } catch(error) {
@@ -56,7 +56,7 @@ const Plants = () => {
                             <Link   
                                     className="App-link" 
                                     name={plant.name}
-                                    id={plant.id}
+                                    id={plant._id}
                                     to={`/plants/${plant._id}`}>
                                 {/* <p className="indexPlantNickname">{plant.nickname}, the {plant.color} </p> */}
                                 <p className="indexPlantName">{plant.name}</p>

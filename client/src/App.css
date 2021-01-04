@@ -83,6 +83,20 @@ nav {
   text-decoration: underline;
 }
 
+.showPlantImg {
+  width: 30%;
+  margin: 0;
+}
+
+.bitingRentFooter {
+  background-color: black;
+  text-align: left;
+  margin: 10rem 0 0 1rem;
+  font-size: .7rem;
+  position: fixed;
+  bottom: .5rem;
+}
+
 .App {
   margin: 0;
   padding: 0;

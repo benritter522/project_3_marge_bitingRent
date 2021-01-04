@@ -5,9 +5,9 @@ const SinglePlant = (props) => {
     const [singlePlant, setSinglePlant] = useState({});
 
     // Read
-    const fetchSinglePlant = async () => {
+    const fetchSinglePlant = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/plants/${props.id}`);
+            const response = await fetch(`http://localhost:3000/plants/${props.match.params.id}`);
             const data = await response.json();
             setSinglePlant(data);
         } catch(error) {
@@ -24,19 +24,19 @@ const SinglePlant = (props) => {
     console.log(props);
     return (
         <div>
-            <h1>hello plant</h1>
+            {/* <h1>hello plant</h1> */}
             {/* <h2>{props.routerProps}</h2> */}
 
 
 
-            {/* <h2>{plant.nickname} the</h2>
-            <h2>{plant.name}</h2>
-            <h2>{plant.latinName}</h2>
+            {/* <h2>{singlePlant.nickname} the</h2> */}
+            <h2>{singlePlant.name}</h2>
+            <h2>{singlePlant.latinName}</h2>
             <br/><br/>
-            <img src={plant.img} className="showImg"/>
+            <img src={singlePlant.img} className="showPlantImg"/>
             <br/><br/>
-            <h2>Origin: {plant.origin}</h2>
-            <h2>Description: {plant.description}</h2> */}
+            <h3>Origin: {singlePlant.origin}</h3>
+            <h3>Description: {singlePlant.description}</h3>
             
         </div>
     )

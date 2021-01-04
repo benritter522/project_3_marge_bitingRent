@@ -31,16 +31,18 @@ function App() {
           <Link className="App-link" to="/plants">Plants</Link>
         </nav>
       </header>
-        <Switch>
+        <Switch> 
+        {/* SWITCH WILL RETURN THE FIRST THING IT FINDS THAT FITS. /PLANTS/:ID MUST BE BEFORE /PLANTS*/}
           <Route exact path ="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/music" component={Music} />
           <Route path="/songs" component={Songs} />
+          <Route exact path="/plants/:id" render={routerProps =>
+            <SinglePlant {...routerProps} />
+          } />
           <Route path="/plants" component={Plants} />
-          <Route exact path="/plants/:id" render={routerProps => {
-            return <SinglePlant routerProps={routerProps} />
-          }} />
         </Switch>
+        <p className="bitingRentFooter"> created by BitingRent</p>
         <br/>
     </div>
   );
