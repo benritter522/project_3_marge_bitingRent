@@ -49,7 +49,7 @@ nav {
 }
 .indexSinglePlant {
   background-color: black;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 20rem;
   /* height: 20rem; */
   margin: .5rem;
@@ -60,21 +60,27 @@ nav {
   width: 80%;
 }
 
-.songs-header {
+/* .songs-header {
   text-align: left;
-  /* background-color: black; */
-  /* border: 1px solid white; */
+
   margin: 0;
   padding: 2rem 10rem;
-}
+} */
 
-
-.songs {
+.indexSongs {
   background-color: black;
   text-align: left;
   /* border: 1px solid white; */
   margin: 0;
   padding: 0 3rem;
+}
+.indexSingleSong {
+  /* border: 1px solid white; */
+  /* margin: 2rem; */
+  padding: 1rem 0;
+}
+.indexSongTitle {
+  text-decoration: underline;
 }
 
 .App {

@@ -34,28 +34,40 @@ const Songs = () => {
 
     useEffect(() => {
         fetchSongs();
-    }, [songs]);
+    }, []);
 
     return(
         <div>
             <h1 className="songs-header">Songs</h1>
-            <ul className="songs">
+            <div className="indexSongs">
                 {
                     songs.map(song => {
                     return(
-                        <li key={song._id}>
-                        <p>Title: {song.title}</p>
-                        <p>Lyrics: {song.lyrics}</p>
-                        <button onClick={
-                            (event) => {
-                            deleteSong(song._id);
-                            }
-                        }>Delete {song.title}</button>
-                        </li>
+                        <div 
+                        className="indexSingleSong" 
+                        // key={song._id}
+                        >
+                            <p className="indexSongTitle">{song.title}</p>
+                            <div className="indexSongLyrics">
+                                {
+                                    song.lyrics.map(lyric => {
+                                        return(
+                                            <p className="indexSingleLyric">{lyric === "" ? <br/> : lyric}</p>
+                                        )
+                                    })
+                                }
+                            </div>
+
+                            {/* <button onClick={
+                                (event) => {
+                                deleteSong(song._id);
+                                }
+                            }>Delete {song.title}</button> */}
+                        </div>
                     )
                     })
                 }
-            </ul>
+            </div>
         </div>
     )
 }

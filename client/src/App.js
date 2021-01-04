@@ -8,6 +8,8 @@ import About from './Components/About/About';
 import Music from './Components/Music/Music';
 import Songs from './Components/Songs/Songs';
 import Plants from './Components/Plants/Plants';
+import SinglePlant from './Components/SinglePlant/SinglePlant';
+
 
 function App() {
   // const [token, setToken] = useState(''); // use for auth
@@ -35,6 +37,9 @@ function App() {
           <Route path="/music" component={Music} />
           <Route path="/songs" component={Songs} />
           <Route path="/plants" component={Plants} />
+          <Route exact path="/plants/:id" render={routerProps => {
+            return <SinglePlant routerProps={routerProps} />
+          }} />
         </Switch>
         <br/>
     </div>
